@@ -9,10 +9,13 @@ import { motion } from "framer-motion"
 import { PreviewAnimation } from "@/components/ProjectPreview"
 import ProjectPreview from "@/components/ProjectPreview"
 import Link from "next/link"
+import { Inter } from "next/font/google"
+
+const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Navbar />
       <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <motion.div
@@ -85,6 +88,6 @@ export default function Home() {
         <ProjectPreview />
         <ProjectPreview />
       </section>
-    </>
+    </main>
   )
 }
