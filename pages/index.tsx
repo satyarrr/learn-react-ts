@@ -8,6 +8,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 import { PreviewAnimation } from "@/components/ProjectPreview"
 import ProjectPreview from "@/components/ProjectPreview"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -27,9 +28,11 @@ export default function Home() {
             world of web development.
           </p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
-            <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">
-              Contact Me
-            </button>
+            <Link href="#">
+              <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">
+                Contact Me
+              </button>
+            </Link>
             <div className="flex items-center gap-4">
               <a href="https://www.instagram.com/satyaferiawan/">
                 <SocialButton bgColor="instagram">
@@ -62,15 +65,23 @@ export default function Home() {
         />
       </section>
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
-        <a href="https://google.com">
+        <a href="#">
           <ProjectPreview
-            name="Flip App"
-            description="Next-gen social media"
-            imageUrl="/project-1.png"
+            name="Expensive Tracker"
+            description="App for calculate price items"
+            imageUrl="/project-5.png"
             bgColor="#685cdd"
           />
         </a>
-        <ProjectPreview imageUrl="project-2.png" />
+        <a href="#">
+          <ProjectPreview
+            imageUrl="project-6.png"
+            name="ToDoList"
+            description="A simple todolist apps"
+            bgColor="#176B87"
+            dark
+          />
+        </a>
         <ProjectPreview />
         <ProjectPreview />
       </section>
