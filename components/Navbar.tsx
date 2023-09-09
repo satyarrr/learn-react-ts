@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="w-5 h-5 bg-green-400 rounded-full" />
         <span>PORTOFOLIO</span>
       </div>
-      <div className="flex gap-12 text-md text-zinc-400">
+      <div className="flex lg:gap-12 gap-2   text-md text-zinc-400">
         <Link href="#" className="font-medium text-black">
           Home
         </Link>

@@ -30,7 +30,7 @@ export default function Home() {
             affection for technology, and my focus is primarily on the exciting
             world of web development.
           </p>
-          <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
+          <div className="flex flex-col lg:flex-row items-center gap-4  justify-self-end">
             <Link href="#">
               <button className="bg-black text-white font-medium py-3 px-12 rounded-full w-60 lg:w-auto">
                 Contact Me
